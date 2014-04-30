@@ -1,5 +1,6 @@
 /**
  * Angular Module relying on Apache Cordova Network Information Plugin (cordova plugin add org.apache.cordova.network-information).
+ * For more information: https://github.com/apache/cordova-plugin-network-information
  */
 var cordovaNetworkInformationModule = angular.module('cordovaNetworkInformationModule', []);
 
@@ -55,7 +56,7 @@ cordovaNetworkInformationModule.factory('cordovaNetworkInformationService', ['$r
 
         /**
          * Get the current connection status.
-         * For more information: https://github.com/apache/cordova-plugin-network-information/blob/dev/doc/index.md#connectiontype
+         * For more information: https://github.com/apache/cordova-plugin-network-information/blob/master/doc/index.md#connectiontype
          */
         getConnectionType: function () {
             $log.debug('cordovaNetworkInformationService.getConnectionType.');
@@ -71,7 +72,7 @@ cordovaNetworkInformationModule.factory('cordovaNetworkInformationService', ['$r
 
         /**
          * Register a callback that will be invoked when the network goes in the given status (see connectionStatusEvent in cordovaNetworkInformationConstants).
-         * For more information: https://github.com/apache/cordova-plugin-network-information/blob/dev/doc/index.md#network-related-events
+         * For more information: https://github.com/apache/cordova-plugin-network-information/blob/master/doc/index.md#network-related-events
          */
         addConnectionStatusChangedListener: function (status, callback) {
             $log.debug('cordovaNetworkInformationService.addConnectionStatusChangedListener.');

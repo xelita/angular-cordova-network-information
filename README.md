@@ -26,7 +26,7 @@ var myapp = angular.module('myapp', ['cordovaNetworkInformationModule']);
 
 ```javascript
 $scope.onNetworkStatusOffline = function() {
-    cordovaNetworkInformationService.addConnectionStatusChangedListener(cordovaNetworkInformationService.offline, function() {
+    cordovaNetworkInformationService.addConnectionStatusChangedListener(cordovaNetworkInformationConstants.offline, function() {
       	alert('Your are now offline');
     });
 };

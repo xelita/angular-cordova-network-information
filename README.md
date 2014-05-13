@@ -54,7 +54,7 @@ The project is tested with `jasmine` running on `karma`.
 >
 ``` bash
 $ npm install
-$ npm postinstall
+$ bower install
 $ npm test
 ```
 

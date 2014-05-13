@@ -32,6 +32,15 @@ $scope.onNetworkStatusOffline = function() {
 };
 ```
 
+## Requirements
+
+This application needs Cordova Network Information plugin to be installed in your app.
+
+In the root folder of your Cordova application, type the following command:
+```shell
+cordova plugin add org.apache.cordova.network-information
+```
+
 ## Ionic Sample
 
 A sample based on [Ionic Framework](http://ionicframework.com) can be found here:
